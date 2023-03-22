@@ -22,12 +22,11 @@ eg GET to `http://localhost:3004/customers` fetches all customers. While DELETE 
 
 ## Task steps
 
-1. Create a new component called **`CustomerListComponent`**. This component should display a list of customers, including their name and email address. Use the mocked **`customers`** data provided to you to display the list of customers in the component.
-2. Add a new service called **`CustomerService`** to the application. The **`CustomerService`** should provide methods for getting a list of customers, getting the details of a specific customer, and updating a customer's details. Use the **`axios`** library to make the relevant HTTP requests to the mocked API.
-3. Extend the **`CustomerListComponent`** created in the previous question to allow users to filter the list of customers by name. Add an input field to the component that allows users to enter a search query, and update the list of customers to show only those whose name matches the query. Use the **`filter()`** method to perform the filtering on the customer data returned from the **`CustomerService`**.
+1. Implement methods in the CustomerService for getting a list of customers, getting the details of a specific customer, and updating a customer's details. Use the **`axios`** library to make the relevant HTTP requests to the mocked API. Make sure that your mock API is running (i.e. with json-server --watch db.json --port 3004).
+2. Create a new component called **`CustomerListComponent`**. This component should display a list of customers, including their name and email address. Use the mocked **`customers`** data provided to you to display the list of customers in the component.
+3. Extend the **`CustomerListComponent`** created in the previous question to allow users to filter the list of customers by name. Add an input field to the component that allows users to enter a search query, and update the list of customers to show only those whose name matches the query.
 4. Create a new component called **`CustomerDetailsComponent`**. This component should display the details of a single customer, including their name, email address, and a list of their orders. Use the **`CustomerService`** to make the relevant HTTP requests to the mocked API to get the customer and order details.
 5. Extend the **`CustomerListComponent`** created in the previous question to allow users to click on a customer in the list and view their details in the **`CustomerDetailsComponent`**. When a user clicks on a customer in the list, navigate to the **`CustomerDetailsComponent`** and display the selected customer's details.
-6. Discuss and suggest any improvements or changes you could make to this project improve performance, state management, or SEO. Explain your reasoning for your proposed changes.
 
 ## How to Submit
 
